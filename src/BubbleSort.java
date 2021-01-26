@@ -3,18 +3,17 @@ import java.util.Arrays;
 public class BubbleSort {
 
         public static void main(String[] args) {
-        // write your code here
-        int[] arr = {5, 2, 1, 10, 50, 10};
-        for (int N = 0; N < arr.length - 1; N++) {
-            for (int k = 0; k < arr.length - 1; k++) {
-                if (arr[k] > arr[k + 1]) {
-                    int tmp = arr[k];
-                    arr[k] = arr[k + 1];
-                    arr[k + 1] = tmp;
+        int[] arrayToSort = {5, 2, 1, 10, 50, 10};
+        for (int i = 0; i < arrayToSort.length - 1; i++) {
+            for (int j = 0; j < arrayToSort.length - 1; j++) {
+                if (arrayToSort[j] > arrayToSort[j + 1]) {
+                    int tmp = arrayToSort[j];
+                    arrayToSort[j] = arrayToSort[j + 1];
+                    arrayToSort[j + 1] = tmp;
                 }
             }
         }
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arrayToSort));
     }
 
 }
